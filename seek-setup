@@ -9,11 +9,6 @@ sudo chown alex: /var/www/html/index.html
 sudo chown -R web:www-data /var/www/html/
 sudo chmod -R 770 /var/www/html/
 
-sudo apt-get install php php-mbstring
-
-sudo apt-get install mysql-server php-mysql
-
-
 sudo apt-get install tcpdump -y
 sudo groupadd pcap 
 sudo usermod -a -G pcap web
