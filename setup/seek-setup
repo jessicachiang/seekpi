@@ -12,6 +12,7 @@ sudo chmod -R 770 /var/www/html/
 sudo apt-get install tcpdump -y
 sudo groupadd pcap 
 sudo usermod -a -G pcap web
+sudo usermod -a -G pcap alex
 sudo usermod -a -G pcap pi 
 sudo chgrp pcap /usr/sbin/tcpdump
 sudo chmod 750 /usr/sbin/tcpdump
