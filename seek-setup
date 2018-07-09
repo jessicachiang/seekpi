@@ -1,0 +1,25 @@
+sudo apt-get remove -y --purge geany wolfram-engine bluej greenfoot nodered sonic-pi *libreoffice* claws-mail claws-mail-i18n minecraft-pi python-pygame
+
+sudo apt-get autoremove --purge -y 
+
+sudo apt-get install apache2 -y
+sudo chown pi: /var/www/html/index.html
+sudo chown web: /var/www/html/index.html
+sudo chown alex: /var/www/html/index.html
+sudo chown -R web:www-data /var/www/html/
+sudo chmod -R 770 /var/www/html/
+
+sudo apt-get install php php-mbstring
+
+sudo apt-get install mysql-server php-mysql
+
+
+sudo apt-get install tcpdump -y
+sudo groupadd pcap 
+sudo usermod -a -G pcap web
+sudo usermod -a -G pcap pi 
+sudo chgrp pcap /usr/sbin/tcpdump
+sudo chmod 750 /usr/sbin/tcpdump
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+
+
