@@ -1,0 +1,4 @@
+cd 
+cd seekpi
+git pull
+cp site/* /var/www/html/site/.
