@@ -15,7 +15,7 @@ sudo adduser alex
 echo "Adding user web"
 sudo adduser web
 
-cp ~/seekpi/setup/README.md /home/web/Desktop
+cp ~/seekpi/setup/server/README.md /home/web/Desktop
 
 sudo chown -R web: /var/www/html/
 sudo chown -R web:www-data /var/www/html/
