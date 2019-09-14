@@ -8,12 +8,14 @@ sudo apt-get install apache2 -y
 sudo chown -R pi: /var/www/html/
 
 rm /var/www/html/index.html
-cp -r site/* /var/www/html
+cp -r ~/seekpi/site/* /var/www/html
 
+eccho "Adding user alex"
 sudo adduser alex
-sudo adduer web
+echo "Adding user web"
+sudo adduser web
 
-cp README.md /home/web/Desktop
+cp ~/seekpi/setup/README.md /home/web/Desktop
 
 sudo chown -R web: /var/www/html/
 sudo chown -R web:www-data /var/www/html/
