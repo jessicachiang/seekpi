@@ -1,10 +1,7 @@
-To change the website
+To change a webpage
 
 go to /var/www/html/site, and use "leafpad" to edit files. 
 
-web@server$ cd /var/www/html/site
-web@server$ leafpad hello.html
+cd /var/www/html
+leafpad hello.html &
 
-To create new file, you can use leafpad too
-
-web@server$ leafpad new-file.html
