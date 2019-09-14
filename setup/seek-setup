@@ -2,10 +2,10 @@ sudo apt-get remove -y --purge geany wolfram-engine bluej greenfoot nodered soni
 
 sudo apt-get autoremove --purge -y 
 
+sudo apt-get update
+
 sudo apt-get install apache2 -y
-sudo chown -R pi: /var/www/html/
 sudo chown -R web: /var/www/html/
-sudo chown -R alex: /var/www/html/
 sudo chown -R web:www-data /var/www/html/
 sudo chmod -R 775 /var/www/html/
 
